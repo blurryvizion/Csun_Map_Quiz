@@ -14,7 +14,7 @@ let rectangles = [];
 let highScores = [];
 
 // CSUN Campus Center Coordinates
-const CSUN_CENTER = { lat: 34.2395, lng: -118.5295 };
+const CSUN_CENTER = { lat: 34.2390, lng: -118.5295 };
 
 // Location Data - Building coordinates and boundaries
 // Each location has a center point and a bounding box for answer checking
@@ -22,31 +22,31 @@ const locations = [
     {
         name: "BookStore",
         prompt: "Where is the BookStore??",
-        // BookStore - 6FPC+XP Northridge
-        center: { lat: 34.2399, lng: -118.5278 },
+        // BookStore - 34.237378, -118.528171
+        center: { lat: 34.2374, lng: -118.5282 },
         bounds: {
-            north: 34.2405,
-            south: 34.2393,
-            east: -118.5268,
-            west: -118.5288
+            north: 34.2380,
+            south: 34.2368,
+            east: -118.5272,
+            west: -118.5292
         }
     },
     {
         name: "Bayramian Hall",
         prompt: "Where is Bayramian Hall",
-        // Bayramian Hall - 6FR9+4F Northridge
-        center: { lat: 34.2398, lng: -118.5337 },
+        // Bayramian Hall - 34.2403962, -118.5308626
+        center: { lat: 34.2404, lng: -118.5309 },
         bounds: {
-            north: 34.2404,
-            south: 34.2392,
-            east: -118.5327,
-            west: -118.5347
+            north: 34.2410,
+            south: 34.2398,
+            east: -118.5299,
+            west: -118.5319
         }
     },
     {
         name: "Jacaranda Hall",
         prompt: "Where is Jacaranda Hall",
-        // Jacaranda Hall - 6FRC+CC Northridge
+        // Jacaranda Hall - 34.2408, -118.5300
         center: { lat: 34.2408, lng: -118.5300 },
         bounds: {
             north: 34.2414,
@@ -56,27 +56,27 @@ const locations = [
         }
     },
     {
-        name: "Manzanita Hall",
-        prompt: "Where is Manzanita Hall",
-        // Manzanita Hall - 6FQ9+3V Northridge
-        center: { lat: 34.2373, lng: -118.5287 },
+        name: "Maple Hall",
+        prompt: "Where is Maple Hall",
+        // Maple Hall - 34.2376369, -118.5312466
+        center: { lat: 34.2376, lng: -118.5312 },
         bounds: {
-            north: 34.2379,
-            south: 34.2367,
-            east: -118.5277,
-            west: -118.5297
+            north: 34.2382,
+            south: 34.2370,
+            east: -118.5302,
+            west: -118.5322
         }
     },
     {
-        name: "Citrus Hall",
-        prompt: "Where is Citrus Hall",
-        // Citrus Hall - 6FQC+JQ Northridge
-        center: { lat: 34.2381, lng: -118.5303 },
+        name: "Chaparral Hall",
+        prompt: "Where is Chaparral Hall",
+        // Chaparral Hall - 34.2382833, -118.5271293
+        center: { lat: 34.2383, lng: -118.5271 },
         bounds: {
-            north: 34.2387,
-            south: 34.2375,
-            east: -118.5293,
-            west: -118.5313
+            north: 34.2389,
+            south: 34.2377,
+            east: -118.5261,
+            west: -118.5281
         }
     }
 ];
@@ -87,7 +87,7 @@ const locations = [
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: CSUN_CENTER,
-        zoom: 18,
+        zoom: 17,
         mapTypeId: 'roadmap',
         disableDefaultUI: true,
         draggable: false,
@@ -99,11 +99,11 @@ function initMap() {
             {
                 featureType: "poi",
                 elementType: "labels",
-                stylers: [{ visibility: "on" }]
+                stylers: [{ visibility: "off" }]
             },
             {
                 featureType: "transit",
-                stylers: [{ visibility: "on" }]
+                stylers: [{ visibility: "off" }]
             }
         ]
     });
@@ -225,10 +225,10 @@ function isWithinBounds(lat, lng, bounds) {
  */
 function drawRectangle(bounds, isCorrect) {
     const rectangle = new google.maps.Rectangle({
-        strokeColor: isCorrect ? '#4CAF50' : '#F44336',
+        strokeColor: isCorrect ? '#436f45ff' : '#a73027ff',
         strokeOpacity: 0.9,
         strokeWeight: 3,
-        fillColor: isCorrect ? '#4CAF50' : '#F44336',
+        fillColor: isCorrect ? '#8edf91ff' : '#ec7a72ff',
         fillOpacity: 0.4,
         map: map,
         bounds: {
