@@ -44,16 +44,16 @@ const locations = [
         }
     },
     {
-        name: "Jacaranda Hall",
-        prompt: "Where is Jacaranda Hall",
-        // JD - Jacaranda Hall — Grid E5 (center-east, near Spirit Plaza)
-        center: { lat: 34.2408, lng: -118.5290 },
-        bounds: {
-            north: 34.2420,
-            south: 34.2396,
-            east: -118.5270,
-            west: -118.5310
-        }
+    name: "Jacaranda Hall",
+    prompt: "Where is Jacaranda Hall",
+    // Jacaranda Hall - 6FRC+CC Northridge (34.2408, -118.5300)
+    center: { lat: 34.2408, lng: -118.5300 },
+    bounds: {
+        north: 34.2418,
+        south: 34.2398,
+        east: -118.5285,
+        west: -118.5315
+    }
     },
     {
         name: "Manzanita Hall",
