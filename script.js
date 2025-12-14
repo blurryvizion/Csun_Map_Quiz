@@ -44,15 +44,15 @@ const locations = [
         }
     },
     {
-    name: "Jacaranda Hall",
-    prompt: "Where is Jacaranda Hall",
-    // Jacaranda Hall - 6FRC+CC Northridge (34.2408, -118.5300)
-    center: { lat: 34.2408, lng: -118.5300 },
+    name: "Bayramian Hall",
+    prompt: "Where is Bayramian Hall",
+    // Bayramian Hall - 6FR9+4F Northridge (34.2398, -118.5337)
+    center: { lat: 34.2398, lng: -118.5337 },
     bounds: {
-        north: 34.2418,
-        south: 34.2398,
-        east: -118.5285,
-        west: -118.5315
+        north: 34.2408,
+        south: 34.2388,
+        east: -118.5322,
+        west: -118.5352
     }
     },
     {
@@ -68,16 +68,16 @@ const locations = [
     }
     },
     {
-        name: "Citrus Hall",
-        prompt: "Where is Citrus Hall",
-        // CS - Citrus Hall — Grid E3 (near Eucalyptus Hall and Live Oak Hall)
-        center: { lat: 34.2385, lng: -118.5282 },
-        bounds: {
-            north: 34.2397,
-            south: 34.2373,
-            east: -118.5262,
-            west: -118.5302
-        }
+    name: "Citrus Hall",
+    prompt: "Where is Citrus Hall",
+    // Citrus Hall - 6FQC+JQ Northridge (34.2381, -118.5303)
+    center: { lat: 34.2381, lng: -118.5303 },
+    bounds: {
+        north: 34.2391,
+        south: 34.2371,
+        east: -118.5288,
+        west: -118.5318
+    }
     }
 ];
 
