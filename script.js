@@ -14,70 +14,70 @@ let rectangles = [];
 let highScores = [];
 
 // CSUN Campus Center Coordinates
-const CSUN_CENTER = { lat: 34.2407, lng: -118.5291 };
+const CSUN_CENTER = { lat: 34.2395, lng: -118.5295 };
 
 // Location Data - Building coordinates and boundaries
 // Each location has a center point and a bounding box for answer checking
 const locations = [
     {
-    name: "BookStore",
-    prompt: "Where is the BookStore??",
-    // BookStore - 6FPC+XP Northridge (34.2399, -118.5278)
-    center: { lat: 34.2399, lng: -118.5278 },
-    bounds: {
-        north: 34.2409,
-        south: 34.2389,
-        east: -118.5263,
-        west: -118.5293
-    }
+        name: "BookStore",
+        prompt: "Where is the BookStore??",
+        // BookStore - 6FPC+XP Northridge
+        center: { lat: 34.2399, lng: -118.5278 },
+        bounds: {
+            north: 34.2405,
+            south: 34.2393,
+            east: -118.5268,
+            west: -118.5288
+        }
     },
     {
         name: "Bayramian Hall",
         prompt: "Where is Bayramian Hall",
-        // BH - Bayramian Hall — Grid C4 (west side, near University Hall)
-        center: { lat: 34.2400, lng: -118.5365 },
+        // Bayramian Hall - 6FR9+4F Northridge
+        center: { lat: 34.2398, lng: -118.5337 },
         bounds: {
-            north: 34.2415,
-            south: 34.2385,
-            east: -118.5345,
-            west: -118.5385
+            north: 34.2404,
+            south: 34.2392,
+            east: -118.5327,
+            west: -118.5347
         }
     },
     {
-    name: "Bayramian Hall",
-    prompt: "Where is Bayramian Hall",
-    // Bayramian Hall - 6FR9+4F Northridge (34.2398, -118.5337)
-    center: { lat: 34.2398, lng: -118.5337 },
-    bounds: {
-        north: 34.2408,
-        south: 34.2388,
-        east: -118.5322,
-        west: -118.5352
-    }
+        name: "Jacaranda Hall",
+        prompt: "Where is Jacaranda Hall",
+        // Jacaranda Hall - 6FRC+CC Northridge
+        center: { lat: 34.2408, lng: -118.5300 },
+        bounds: {
+            north: 34.2414,
+            south: 34.2402,
+            east: -118.5290,
+            west: -118.5310
+        }
     },
     {
-    name: "Manzanita Hall",
-    prompt: "Where is Manzanita Hall",
-    // Manzanita Hall - 6FQ9+3V Northridge (34.2373, -118.5287)
-    center: { lat: 34.2373, lng: -118.5287 },
-    bounds: {
-        north: 34.2383,
-        south: 34.2363,
-        east: -118.5272,
-        west: -118.5302
-    }
+        name: "Manzanita Hall",
+        prompt: "Where is Manzanita Hall",
+        // Manzanita Hall - 6FQ9+3V Northridge
+        center: { lat: 34.2373, lng: -118.5287 },
+        bounds: {
+            north: 34.2379,
+            south: 34.2367,
+            east: -118.5277,
+            west: -118.5297
+        }
     },
     {
-    name: "Citrus Hall",
-    prompt: "Where is Citrus Hall",
-    // Citrus Hall - 6FQC+JQ Northridge (34.2381, -118.5303)
-    center: { lat: 34.2381, lng: -118.5303 },
-    bounds: {
-        north: 34.2391,
-        south: 34.2371,
-        east: -118.5288,
-        west: -118.5318
-    }
+        name: "Citrus Hall",
+        prompt: "Where is Citrus Hall",
+        // Citrus Hall - 6FQC+JQ Northridge
+        center: { lat: 34.2381, lng: -118.5303 },
+        bounds: {
+            north: 34.2387,
+            south: 34.2375,
+            east: -118.5293,
+            west: -118.5313
+        }
     }
 ];
 
@@ -87,7 +87,7 @@ const locations = [
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: CSUN_CENTER,
-        zoom: 16,
+        zoom: 18,
         mapTypeId: 'roadmap',
         disableDefaultUI: true,
         draggable: false,
@@ -99,11 +99,11 @@ function initMap() {
             {
                 featureType: "poi",
                 elementType: "labels",
-                stylers: [{ visibility: "off" }]
+                stylers: [{ visibility: "on" }]
             },
             {
                 featureType: "transit",
-                stylers: [{ visibility: "off" }]
+                stylers: [{ visibility: "on" }]
             }
         ]
     });
