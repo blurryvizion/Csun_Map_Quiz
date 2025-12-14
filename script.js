@@ -44,16 +44,16 @@ const locations = [
         }
     },
     {
-        name: "Jacaranda Hall",
-        prompt: "Where is Jacaranda Hall",
-        // Jacaranda Hall - 34.2408, -118.5300
-        center: { lat: 34.2408, lng: -118.5300 },
-        bounds: {
-            north: 34.2414,
-            south: 34.2402,
-            east: -118.5290,
-            west: -118.5310
-        }
+    name: "Jacaranda Hall",
+    prompt: "Where is Jacaranda Hall",
+    // Jacaranda Hall - 34.2411177, -118.5289256
+    center: { lat: 34.2411, lng: -118.5289 },
+    bounds: {
+        north: 34.2417,
+        south: 34.2405,
+        east: -118.5279,
+        west: -118.5299
+    }
     },
     {
         name: "Maple Hall",
