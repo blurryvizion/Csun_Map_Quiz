@@ -20,16 +20,16 @@ const CSUN_CENTER = { lat: 34.2407, lng: -118.5291 };
 // Each location has a center point and a bounding box for answer checking
 const locations = [
     {
-        name: "BookStore",
-        prompt: "Where is the BookStore??",
-        // CSC - Campus Store Complex — Grid E2 (south side of campus, near Nordhoff St)
-        center: { lat: 34.2365, lng: -118.5282 },
-        bounds: {
-            north: 34.2375,
-            south: 34.2355,
-            east: -118.5262,
-            west: -118.5302
-        }
+    name: "BookStore",
+    prompt: "Where is the BookStore??",
+    // BookStore - 6FPC+XP Northridge (34.2399, -118.5278)
+    center: { lat: 34.2399, lng: -118.5278 },
+    bounds: {
+        north: 34.2409,
+        south: 34.2389,
+        east: -118.5263,
+        west: -118.5293
+    }
     },
     {
         name: "Bayramian Hall",
