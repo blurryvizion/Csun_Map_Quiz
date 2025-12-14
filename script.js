@@ -22,56 +22,61 @@ const locations = [
     {
         name: "BookStore",
         prompt: "Where is the BookStore??",
-        center: { lat: 34.2397, lng: -118.5285 },
+        // CSC - Campus Store Complex — Grid E2 (south side of campus, near Nordhoff St)
+        center: { lat: 34.2365, lng: -118.5282 },
         bounds: {
-            north: 34.2405,
-            south: 34.2390,
-            east: -118.5270,
-            west: -118.5300
+            north: 34.2375,
+            south: 34.2355,
+            east: -118.5262,
+            west: -118.5302
         }
     },
     {
         name: "Bayramian Hall",
         prompt: "Where is Bayramian Hall",
-        center: { lat: 34.2415, lng: -118.5305 },
+        // BH - Bayramian Hall — Grid C4 (west side, near University Hall)
+        center: { lat: 34.2400, lng: -118.5365 },
         bounds: {
-            north: 34.2425,
-            south: 34.2405,
-            east: -118.5285,
-            west: -118.5325
+            north: 34.2415,
+            south: 34.2385,
+            east: -118.5345,
+            west: -118.5385
         }
     },
     {
         name: "Jacaranda Hall",
         prompt: "Where is Jacaranda Hall",
-        center: { lat: 34.2420, lng: -118.5260 },
+        // JD - Jacaranda Hall — Grid E5 (center-east, near Spirit Plaza)
+        center: { lat: 34.2408, lng: -118.5290 },
         bounds: {
-            north: 34.2430,
-            south: 34.2410,
-            east: -118.5245,
-            west: -118.5275
+            north: 34.2420,
+            south: 34.2396,
+            east: -118.5270,
+            west: -118.5310
         }
     },
     {
         name: "Manzanita Hall",
         prompt: "Where is Manzanita Hall",
-        center: { lat: 34.2380, lng: -118.5275 },
+        // MZ - Manzanita Hall — Grid D2 (south-center, near Mike Curb College Arts Walk)
+        center: { lat: 34.2370, lng: -118.5320 },
         bounds: {
-            north: 34.2390,
-            south: 34.2370,
-            east: -118.5260,
-            west: -118.5290
+            north: 34.2382,
+            south: 34.2358,
+            east: -118.5300,
+            west: -118.5340
         }
     },
     {
         name: "Citrus Hall",
         prompt: "Where is Citrus Hall",
-        center: { lat: 34.2370, lng: -118.5320 },
+        // CS - Citrus Hall — Grid E3 (near Eucalyptus Hall and Live Oak Hall)
+        center: { lat: 34.2385, lng: -118.5282 },
         bounds: {
-            north: 34.2380,
-            south: 34.2360,
-            east: -118.5305,
-            west: -118.5335
+            north: 34.2397,
+            south: 34.2373,
+            east: -118.5262,
+            west: -118.5302
         }
     }
 ];
