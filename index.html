@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSUN Campus Map Quiz</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Instructions Overlay -->
+    <div class="instructions-overlay" id="instructionsOverlay">
+        <div class="instructions-box">
+            <h2>🗺️ CSUN Campus Map Quiz</h2>
+            <p>Test your knowledge of the California State University, Northridge campus! Double-click on the map to identify the location of each building. You have 5 locations to find. Good luck!</p>
+            <button class="start-btn" onclick="startGame()">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Feedback Toast -->
+    <div class="feedback-toast" id="feedbackToast">
+        <h3 id="feedbackTitle"></h3>
+        <p id="feedbackMessage"></p>
+    </div>
+
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="quiz-panel">
+            <div class="quiz-header">
+                <h1>Map Quiz. Please double click on the map the location of:</h1>
+            </div>
+
+            <div class="timer-container">
+                <span class="timer-label">Time Elapsed</span>
+                <span class="timer-value" id="timer">00:00</span>
+            </div>
+
+            <div class="questions-list" id="questionsList">
+                <!-- Questions will be dynamically added here -->
+            </div>
+
+            <div class="final-score" id="finalScore" style="display: none;">
+                <h2 id="scoreText"></h2>
+                <p class="stats" id="statsText"></p>
+                <div class="high-score-section">
+                    <h3>🏆 High Scores</h3>
+                    <ul class="high-scores-list" id="highScoresList">
+                        <!-- High scores will be added here -->
+                    </ul>
+                </div>
+                <button class="restart-btn" onclick="restartGame()">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div class="map-container" id="mapContainer">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- External JavaScript -->
+<script src="script.js"></script>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-LXk0pqKnQX36N-p9gjRynHsVBJxjMfI&callback=initMap" async defer></script>
+</body>
+</html>
