@@ -56,16 +56,16 @@ const locations = [
     }
     },
     {
-        name: "Manzanita Hall",
-        prompt: "Where is Manzanita Hall",
-        // MZ - Manzanita Hall — Grid D2 (south-center, near Mike Curb College Arts Walk)
-        center: { lat: 34.2370, lng: -118.5320 },
-        bounds: {
-            north: 34.2382,
-            south: 34.2358,
-            east: -118.5300,
-            west: -118.5340
-        }
+    name: "Manzanita Hall",
+    prompt: "Where is Manzanita Hall",
+    // Manzanita Hall - 6FQ9+3V Northridge (34.2373, -118.5287)
+    center: { lat: 34.2373, lng: -118.5287 },
+    bounds: {
+        north: 34.2383,
+        south: 34.2363,
+        east: -118.5272,
+        west: -118.5302
+    }
     },
     {
         name: "Citrus Hall",
